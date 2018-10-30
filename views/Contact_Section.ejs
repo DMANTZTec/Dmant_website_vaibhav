@@ -1,0 +1,101 @@
+
+<!--<div id="test">-->
+<div id="ContactUsModal">
+    <div id="cerrorBox"></div>
+    <div id="C_S">
+
+        <div id="Contact_Us">
+            <h2 id="C_U">
+                Contact Us<br/>
+            </h2>
+        </div>
+
+        <div id="Sub_Title">
+            <h3 id="S_T">
+                Swing by for a cup of coffee, or leave us a message<br/>
+            </h3>
+        </div>
+        <div id="ContactUsMapAndFormBox">
+            <div id="ContactUsLocationMap">
+            </div>
+                <form id="contact">
+
+                    <div id="cFirst_Name">
+                        First Name
+
+                        <input type="text" id="Fname_text_box" placeholder="Your name.."/>
+                    </div>
+                    <div id="cLast_Name">
+
+                        Last Name
+                        <input type="text" id="cLname_box" placeholder="Your last name.."/>
+
+                    </div>
+
+                    <div id="cE-mail">
+                        E-mail
+                        <input type="text" id="cEmail_box" placeholder="E-mail.."/>
+                    </div>
+
+
+                    <div id="Country">
+
+                        Country
+
+                        <select id="Country_box">
+                            <option>
+                                none
+                            </option>
+                            <option>
+                                Australia
+                            </option>
+                            <option>
+                                Canada
+                            </option>
+                            <option>
+                                USA
+                            </option>
+                            <option>
+                                India
+                            </option>
+                        </select>
+                    </div>
+                    <div id="Subject">
+
+                        Subject
+                        <textarea id="Subject_box">Write something..</textarea>
+                    </div>
+
+                </form>
+                <button id="cSubmit" onclick="ContactSection()">Submit</button>
+               <button id="cReset" onclick="resetform1()">Reset</button>
+            </div>
+    </div>
+</div>
+<!--</div>-->
+
+<!--
+code
+    <script>
+        function myMap() {
+            var mapOptions = {
+                center: new google.maps.LatLng(51.5, -0.12),
+                zoom: 10,
+                mapTypeId: google.maps.MapTypeId.HYBRID
+            }
+            var map = new google.maps.Map(document.getElementById("image"), mapOptions);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
+<script>
+    function myMap() {
+        var myCenter = new google.maps.LatLng(51.508742,-0.120850);
+        var mapCanvas = document.getElementById("image");
+        var mapOptions = {center: myCenter, zoom: 12};
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        var marker = new google.maps.Marker({position:myCenter});
+        marker.setMap(map);
+
+    }
+</script> -->
