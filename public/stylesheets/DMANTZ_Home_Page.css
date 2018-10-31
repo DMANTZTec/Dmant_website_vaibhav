@@ -48,6 +48,13 @@ li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
 } */
+.navbar-brand{
+	padding: 0px 15px;
+}
+.navbar-inverse {
+    background-color: #fff;
+    border-color: #fff;
+}
 .about-section {
 	padding: 20px 5px;
 }

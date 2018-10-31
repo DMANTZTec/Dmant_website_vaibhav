@@ -8,9 +8,9 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var users = require('./routes/users');
 var DMANTZ_Home_Page= require('./routes/DMANTZ_Home_Page');
-var Contact_Section= require('./routes/Contact_Section');
+//var Contact_Section= require('./routes/Contact_Section');
 var app = express();
-var dmantz=require('./routes/dmantz-new');
+//var dmantz=require('./routes/dmantz-new');
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -26,8 +26,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 app.use('/DMANTZ_Home_Page',DMANTZ_Home_Page);
-app.use('/Contact_Section',Contact_Section);
-app.use('/dmantz-new',dmantz);
+//app.use('/Contact_Section',Contact_Section);
+//app.use('/dmantz-new',dmantz);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
