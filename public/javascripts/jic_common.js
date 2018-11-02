@@ -12,7 +12,18 @@
 // end of the google maps code.
 
 
-
+function careers(){
+	var xhttp = new XMLHttpRequest();
+    var url = "http://localhost:3004/careers";
+    xhttp.open("GET", url, true);
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhttp.onreadystatechange = function () {
+        if ((this.readyState == 4) && (this.status == 200)) {
+            console.log("after getting response" + xhttp.responseText);
+        }
+    };
+    xhttp.send(params);
+}
 
 
 window.onscroll=function() {scrollFunction()};
@@ -34,16 +45,16 @@ function topFunction() {
 function myDropdown() {
     document.getElementById("myDropdown").classList.toggle("show");
 };
-
-$(function() {
-	$( 'ul.nav li' ).on( 'click', function() {
-	    $( this ).parent().find( 'li.active' ).removeClass( 'active' );
-	    $( this ).addClass( 'active' );
-	});
-	});
-$(window).on('beforeunload', function(){
-	  $(window).scrollTop(0);
-	});
+//
+//$(function() {
+//	$( 'ul.nav li' ).on( 'click', function() {
+//	    $( this ).parent().find( 'li.active' ).removeClass( 'active' );
+//	    $( this ).addClass( 'active' );
+//	});
+//	});
+//$(window).on('beforeunload', function(){
+//	  $(window).scrollTop(0);
+//	});
 
 
 

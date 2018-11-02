@@ -17,15 +17,14 @@ li {
 
 li a {
 	display: block;
-	color: black;
+	color: #000;
 	/*text-align: center;*/
 	padding: 44px 16px;
 	text-decoration: none;
-	font-family: Times New Roman;
-}
-
-li a:hover {
-	color: yellow;
+	font-family: 'Nanum Gothic';
+	font-weight: 600;
+    font-style: italic;
+    transition: .3s all;
 }
 
 .transbox {
@@ -55,8 +54,15 @@ li a:hover {
     background-color: #fff;
     border-color: #fff;
 }
+.logo{
+	width:150px;
+}
+.custom-navbar.navbar-inverse .navbar-nav>.active>a,.custom-navbar.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #333333;
+    background-color: #DDDDDD;
+}
 .about-section {
-	padding: 20px 5px;
+    padding: 51px 5px 20px;
 }
 .about-section a{
 	text-decoration:none;
@@ -113,6 +119,9 @@ li a:hover {
 	z-index: 1;
 	transform: rotateY(180deg);
 	-webkit-transform: rotateY(180deg);
+}
+.back-side i.fa.fa-handshake-o.back-handshake {
+    padding-top: 35px;
 }
 .back-side i.fa.fa-cogs {
     font-size: 100px;
@@ -258,7 +267,7 @@ li a:hover {
 }
 .active, .top-btn:hover {
     background-color: #666;
-    color: white;
+    color: #fff;
 }
 @media ( min-width : 320px) and (max-width: 480px) {
 	label {
