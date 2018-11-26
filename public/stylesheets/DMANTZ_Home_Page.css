@@ -23,7 +23,7 @@ li a {
 	text-decoration: none;
 	font-family: 'Nanum Gothic';
 	font-weight: 600;
-    font-style: italic;
+    font-style: normal;
     transition: .3s all;
 }
 
@@ -50,16 +50,51 @@ li a {
 .navbar-brand{
 	padding: 0px 15px;
 }
+
 .navbar-inverse {
     background-color: #fff;
     border-color: #fff;
 }
+.navbar-toggle.toggle-button{
+	background-color:#929292;
+}
+/* .bg-black{
+    background-color: #000;
+} */
 .logo{
 	width:150px;
 }
+.call {
+    color: #000;
+    font-size: 20px;
+    vertical-align: middle;
+    padding-right: 6px;
+}
+.pie{
+    height: 20px;
+    width: 1px;
+    background-color: #000;
+    margin-top: 15px;
+    transform: rotate(25deg);
+    /* padding-right: 1px; */
+    margin-right: 4px;
+}
+ul.nav.navbar-nav.navbar-right {
+    padding-right: 170px;
+}
+li.email {
+    position: absolute;
+    right: 43px;
+    top: -10px;
+}
+li.phone {
+    position: absolute;
+    right: 91px;
+    top: 10px;
+}
 .custom-navbar.navbar-inverse .navbar-nav>.active>a,.custom-navbar.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
     color: #333333;
-    background-color: #DDDDDD;
+    background-color: #fff;
 }
 .about-section {
     padding: 51px 5px 20px;
@@ -215,7 +250,7 @@ li a {
 	font-weight: 600;
 }
 
-.contact-section .form-width {
+/* .contact-section .form-width {
 	width: 50%;
 }
 
@@ -264,35 +299,46 @@ li a {
 .contact-section .creset:hover {
 	background-color: red;
 	color: #fff;
-}
-.active, .top-btn:hover {
-    background-color: #666;
+} 
+ .active, .top-btn:hover {
+    background-color: #fff;
     color: #fff;
-}
+}  */
 @media ( min-width : 320px) and (max-width: 480px) {
-	label {
+	 /* label {
 		width: 100px;
 		display: inline-block;
 		padding-top: 10px;
-	}
-	.contact-section .submit, .contact-section .creset {
+	} */
+	/* .contact-section .submit, .contact-section .creset {
 		padding: 0px;
-	}
+	} */
+	ul.nav.navbar-nav.navbar-right {
+    padding-right: 0px;
+     }
+     li.email {
+    right: 87px;
+    top: 43px;
+    }
+    li.phone {
+    right: 138px;
+    top: 63px;
+    }
 	.contact-section .container .message-section {
 		font-size: 12px;
-	}
+	} 
 }
 
 @media ( min-width : 481px) and (max-width: 767px) {
-	label {
+	/* label {
 		padding-top: 10px;
-	}
+	}  */
 }
 
 @media ( min-width : 768px) and (max-width: 991px) {
-	label {
+	/* label {
 		padding-top: 10px;
-	}
+	}  */
 }
 end
  
